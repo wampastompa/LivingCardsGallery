@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Yoink! Studio</title>
+    <style>
+        body {
+            background-color: #111; /* Dark background to match Unity player */
+            color: #eee;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        .player-container {
+            width: 100%;
+            max-width: 960px; /* Standard Unity WebGL width */
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border: 2px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .disclaimer {
+            max-width: 800px;
+            margin-top: 40px;
+            line-height: 1.6;
+            color: #aaa;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        hr {
+            width: 50px;
+            border: 1px solid #444;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" alt="Studio Logo" class="logo">
+
+    <div class="player-container">
+        <iframe src="https://play.unity.com/en/games/YOUR-GAME-ID/embed" allow="autoplay; fullscreen; vr"></iframe>
+    </div>
+
+    <div class="disclaimer">
+        <hr>
+        <p><strong>Technical Note:</strong> This experience is a physics-based prototype optimized for desktop browsers. 
+        Performance may vary depending on hardware and browser hardware acceleration settings. 
+        If you encounter visual stutters, please ensure your browser is up to date and that 
+        WebGL 2.0 is enabled. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
